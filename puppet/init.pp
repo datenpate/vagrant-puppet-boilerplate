@@ -5,4 +5,5 @@ node default {
 	include lamp::apache2
 	include lamp::php5
 	include lamp::mysql5
+	include lamp::phpmyadmin
 }
