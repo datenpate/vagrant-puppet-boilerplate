@@ -1,6 +1,6 @@
 class lamp::phpmyadmin {
 	package { "phpmyadmin" :
-		ensure => latest,
+		ensure => installed,
 		require => Package["mysql-server", "apache2", "php5"],
 		notify => Service["apache2"],
 	}
